@@ -1,0 +1,37 @@
+[1] "e109_eg56_p17_63f6c3d4" "8"                     
+     term_id                          term_name
+1 GO:0060537          muscle tissue development
+2 GO:0007519 skeletal muscle tissue development
+3 GO:0060538  skeletal muscle organ development
+4 GO:0005869                   dynactin complex
+5 GO:0015629                 actin cytoskeleton
+6 GO:0005856                       cytoskeleton
+7 GO:0003779                      actin binding
+8 GO:0008092       cytoskeletal protein binding
+[1] "e110_eg57_p18_4e6dcbc3" "21"                    
+      term_id                                             term_name
+1  GO:0030036                       actin cytoskeleton organization
+2  GO:0030029                          actin filament-based process
+3  GO:0007626                                   locomotory behavior
+4  GO:0007010                             cytoskeleton organization
+5  GO:0060537                             muscle tissue development
+6  GO:0097435                     supramolecular fiber organization
+7  GO:0007015                           actin filament organization
+8  GO:0007610                                              behavior
+9  GO:0048738                     cardiac muscle tissue development
+10 GO:0055003                            cardiac myofibril assembly
+11 GO:0014706                    striated muscle tissue development
+12 GO:0030239                                    myofibril assembly
+13 GO:0055002                      striated muscle cell development
+14 GO:0010927 cellular component assembly involved in morphogenesis
+15 GO:0030018                                                Z disc
+16 GO:0031674                                                I band
+17 GO:0030017                                             sarcomere
+18 GO:0030016                                             myofibril
+19 GO:0043292                                     contractile fiber
+20 GO:0003779                                         actin binding
+21 GO:0008092                          cytoskeletal protein binding
+[1] "e111_eg58_p18_f463989d" "2"                     
+     term_id                    term_name
+1 GO:0003779                actin binding
+2 GO:0008092 cytoskeletal protein binding
