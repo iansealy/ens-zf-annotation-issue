@@ -27,3 +27,12 @@ plot = (
     .label(title="Number of Genes With Same Name As In Ensembl 108")
 )
 plot.save("same-name-summary.png", bbox_inches="tight")
+
+summary = pd.read_table("gprofiler-go-summary.tsv")
+plot = (
+    so.Plot(summary, x="Ensembl Version", y="Gene Count")
+    .add(so.Bar())
+    .scale(x=so.Continuous().tick(every=1))
+    .label(title="Number of Genes With GO Terms Annotated In g:Profiler")
+)
+plot.save("gprofiler-go-summary.png", bbox_inches="tight")

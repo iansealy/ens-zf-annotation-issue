@@ -1,5 +1,7 @@
 # Zebrafish Ensembl 110+ Annotation
 
+(**Update 2025-02-04:** Added more g:Profiler data.)
+
 **TL;DR:** For zebrafish, it's currently probably best to use Ensembl 109 for annotation, enrichment analysis, etc...
 
 I was prompted to write this because someone on [Mastodon](https://genomic.social/@mmarchin/113794610067417700) mentioned that they had spotted problems with the annotation for zebrafish in Ensembl 110 and asked for advice.
@@ -30,9 +32,17 @@ At this point, you might be wondering why I recommended using Ensembl 109 rather
 
 ![Ensembl 111 g:Profiler Enrichment](gprofiler111.png)
 
+![Ensembl 112 g:Profiler Enrichment](gprofiler112.png)
+
 As you can see, the results differ somewhat. In this case, for Ensembl 110, the enrichment becomes less specific, which seems to be a common effect, although I've also seen cases where the enrichment instead disappears.
 
-g:Profiler are due to update to Ensembl 112 (in beta at least) in the next two weeks, so I'll update with the results for that version soon.
+~~g:Profiler are due to update to Ensembl 112 (in beta at least) in the next two weeks, so I'll update with the results for that version soon.~~
+
+g:Profiler updated to Ensembl 112 last week, so I've added the enrichment analysis for that version above. Oddly, the enrichments don't seem to correlate well with the number of genes that are annotated with GO terms in g:Profiler:
+
+![Number of Genes With GO Terms Annotated in g:Profiler](gprofiler-go-summary.png)
+
+The above plot also indicates that I was perhaps wrong about g:Profiler having downloaded their data for Ensembl 110 during the period before it was updated.
 
 As mentioned, I contacted Ensembl Helpdesk last year and they are aware of the problem and are in contact with ZFIN in order to improve things. I'm hoping to see a big improvement in Ensembl 114.
 
