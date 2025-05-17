@@ -1,5 +1,5 @@
 cat /dev/null > qsub-commands.txt
-for rel in 108 109 110 111 112 113; do
+for rel in 108 109 110 111 112 113 114; do
   for chr in `seq 25`; do
     echo "module purge; module load Ensembl/$rel; perl dump-annotation.pl --slice_regexp '^$chr\$' > dump-e${rel}-$chr.txt" >> qsub-commands.txt
   done
@@ -12,7 +12,7 @@ cat << 'EOF' > qsub-wrapper.sh
 #$ -pe smp 1
 #$ -l h_rt=1:0:0
 #$ -l h_vmem=2G
-#$ -t 1-156
+#$ -t 1-182
 #$ -tc 20
 #$ -o $TASK_ID.o
 #$ -e $TASK_ID.e
@@ -42,7 +42,7 @@ gzip -cd dump-annotation.tsv.gz | cut -f1,3 \
   >> source-summary.tsv
 
 echo -e "Ensembl Version\tGene Count" > same-name-summary.tsv
-for rel in `seq 109 113`; do
+for rel in `seq 109 114`; do
   echo -ne "$rel\t"
   comm -12 <(gzip -cd dump-annotation.tsv.gz | grep ^108 | cut -f2,5) <(gzip -cd dump-annotation.tsv.gz | grep ^$rel | cut -f2,5) | wc -l
 done >> same-name-summary.tsv

@@ -5,14 +5,17 @@ Ensembl Version	Source	Gene Count
 111	HGNC Symbol	164
 112	HGNC Symbol	3073
 113	HGNC Symbol	1318
+114	HGNC Symbol	323
 108	NCBI gene	4194
 109	NCBI gene	4194
 110	NCBI gene	4194
 111	NCBI gene	4194
 112	NCBI gene	1380
 113	NCBI gene	218
+114	NCBI gene	87
 112	RFAM	2669
 113	RFAM	2669
+114	RFAM	2646
 108	RefSeq mRNA	27
 109	RefSeq mRNA	27
 110	RefSeq mRNA	27
@@ -27,15 +30,18 @@ Ensembl Version	Source	Gene Count
 111	ZFIN	20312
 112	ZFIN	14050
 113	ZFIN	19065
+114	ZFIN	26585
 108	miRBase	308
 109	miRBase	308
 110	miRBase	308
 111	miRBase	308
 112	miRBase	46
 113	miRBase	46
+114	miRBase	18
 108	unnamed	7504
 109	unnamed	7502
 110	unnamed	7502
 111	unnamed	7502
 112	unnamed	11302
 113	unnamed	9204
+114	unnamed	2861
