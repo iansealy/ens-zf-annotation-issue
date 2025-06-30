@@ -54,13 +54,13 @@ for img in `ls gprofiler*.png`; do
 done
 
 rel=108
-for url in https://biit.cs.ut.ee/gprofiler_archive3/e109_eg56_p17 https://biit.cs.ut.ee/gprofiler_archive3/e110_eg57_p18 https://biit.cs.ut.ee/gprofiler_archive3/e111_eg58_p18 https://biit.cs.ut.ee/gprofiler; do
+for url in https://biit.cs.ut.ee/gprofiler_archive3/e109_eg56_p17 https://biit.cs.ut.ee/gprofiler_archive3/e110_eg57_p18 https://biit.cs.ut.ee/gprofiler_archive3/e111_eg58_p18 https://biit.cs.ut.ee/gprofiler_archive3/e112_eg59_p19 https://biit.cs.ut.ee/gprofiler; do
   ((rel++))
   curl -q -o gprofiler-$rel.gmt $url/static/gprofiler_full_drerio.ENSG.gmt
 done
 
 echo -e "Ensembl Version\tGene Count" > gprofiler-go-summary.tsv
-for rel in `seq 109 112`; do
+for rel in `seq 109 113`; do
   echo -ne "$rel\t"
   grep GO: gprofiler-$rel.gmt | sed -E 's/\t/\n/g' | grep ^ENS | sort -u | wc -l
 done >> gprofiler-go-summary.tsv

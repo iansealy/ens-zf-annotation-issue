@@ -11,6 +11,7 @@ urls <- c(
   "http://biit.cs.ut.ee/gprofiler_archive3/e109_eg56_p17",
   "http://biit.cs.ut.ee/gprofiler_archive3/e110_eg57_p18",
   "https://biit.cs.ut.ee/gprofiler_archive3/e111_eg58_p18",
+  "https://biit.cs.ut.ee/gprofiler_archive3/e112_eg59_p19",
   "https://biit.cs.ut.ee/gprofiler"
 )
 
